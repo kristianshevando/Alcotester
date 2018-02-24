@@ -114,6 +114,9 @@ var operators = [
     }
 ];
 
+
+//hello friend my name is Kristian
+
 var t;
 var b;
 var strB;
