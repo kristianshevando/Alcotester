@@ -1,20 +1,20 @@
 var expressions = [
     {
-        operator: "-", 
-        result: function(firstOperand, secondOperand)
-        {
-            console.log('a = ', firstOperand);
-            console.log('b = ', secondOperand);
-            return firstOperand-secondOperand;
-        }
-    },
-    {
         operator: "+", 
         result: function(firstOperand, secondOperand)
         {
             console.log('a = ', firstOperand);
             console.log('b = ', secondOperand);
             return firstOperand+secondOperand;
+        }
+    },
+    {
+        operator: "-", 
+        result: function(firstOperand, secondOperand)
+        {
+            console.log('a = ', firstOperand);
+            console.log('b = ', secondOperand);
+            return firstOperand-secondOperand;
         }
     },
     { 
@@ -79,11 +79,11 @@ function mainFunction()
         console.log(firstRandomOperand);
         console.log(secondRandomOperand);
 
-        inputtedResult = prompt(`Enter the number ${firstRandomOperand}${expressions[randomOperator].operator}${secondRandomOperandString}: `,);
+        inputtedResult = prompt(`Enter the number ${firstRandomOperand}${expressions[randomOperator].operator}${secondRandomOperandString}: `);
         console.log(inputtedResult);
-        inputtedResult = inputtedResult.replace(",",".");
-    
+        inputtedResult = inputtedResult.replace(",", ".");
         console.log('Inputted result: ', inputtedResult);
+        
         if(+inputtedResult == +expectedResult) 
         {
             alert('Drink one more :)');
