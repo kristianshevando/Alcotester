@@ -1,4 +1,4 @@
-var expressions = [
+const expressions = [
     {
         operator: "+", 
         result: function(firstOperand, secondOperand)
@@ -52,7 +52,6 @@ function mainFunction()
         const secondRandomOperandString = (secondRandomOperand < 0) ? `(${secondRandomOperand})` : `${secondRandomOperand}`;
 
         const expectedResult = (expressions[randomOperator].result(firstRandomOperand, secondRandomOperand)).toFixed(1);
-        console.log('Expected result: ', expectedResult);
 
         const inputtedResult = prompt(`Enter the number ${firstRandomOperand}${expressions[randomOperator].operator}${secondRandomOperandString}: `);
         
